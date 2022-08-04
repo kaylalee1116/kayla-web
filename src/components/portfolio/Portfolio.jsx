@@ -10,7 +10,7 @@ const Portfolio = () => {
 
       <div className="container portfolio__container">
         <article className='portfolio__item'> {/* TODO: add another link to this website */}
-          <a href="https://kaylalee.net/" target='_blank'>
+          <a href="https://github.com/kaylalee1116/kayla-web" target='_blank'>
             <BsGithub className='portfolio__item-icon'/>
           </a>
           <h3>Portfolio Website</h3>

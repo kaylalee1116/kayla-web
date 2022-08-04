@@ -51,7 +51,7 @@ const Experience = () => {
 
 
   return (
-    <section id='Experience'>
+    <section id='experience'>
       <h2> Work Experience</h2>
       <div className="container experience__container">
         <div className="tab__list">
