@@ -1,0 +1,41 @@
+.portfolio__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.portfolio__container > article {
+    background: var(--color-bg-variant);
+    padding: 2rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+}
+
+.portfolio__container small {
+    color: rgba(255, 255, 255, .6);
+}
+
+.portfolio__container h3 {
+    color: var(--color-primary);
+}
+
+.portfolio__container h6 {
+    font-weight: 200;
+    color: var(--color-primary);
+}
+
+/* ========================== MEDIA QUERIES: TABLETS =========================== */
+@media screen and (max-width: 1024px) {
+    .portfolio__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+}
+
+/* ========================== MEDIA QUERIES: PHONES =========================== */
+@media screen and (max-width: 600px) {
+    .portfolio__container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,93 @@
+header {
+    height: 30vh;
+    padding-top: 4rem;
+    overflow: hidden;
+    margin-bottom: -7rem;
+}
+
+.header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+.type a {
+    font-size: 10rem;
+}
+.my__name {
+    color: var(--color-primary);
+}
+
+.Typist {
+    display: inline-block;
+}
+
+/* ==================== CTA style ===================== */
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* ==================== social media style ===================== */
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+    position: fixed;
+    left: 2.5rem;
+    bottom: 3rem;
+}
+
+.header__socials::after {
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+.header__socials::before {
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/* ==================== image style ===================== */
+.me {
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 22rem;
+    height: 15rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    /* border-radius: 12rem 12rem 0 0; */
+    overflow:hidden;
+    /* padding: 5rem 1.5rem 1.5rem 1.5rem; */
+}
+
+/* ==================== image style ===================== */
+.scroll__down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 200;
+    font-size: .9rem;
+}
+
+/* ========================== MEDIA QUERIES: TABLETS =========================== */
+@media screen and (max-width: 1024px) {
+    .header__socials {
+        left: 1.5rem;
+    }
+}
+
+/* ========================== MEDIA QUERIES: PHONES =========================== */
+@media screen and (max-width: 600px) {
+    .header__socials, .scroll__down {
+        display: none;
+    }
+}

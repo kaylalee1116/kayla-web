@@ -1,0 +1,11 @@
+footer {
+    background: var(--color-bg);
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 0.6rem;
+    margin-top: 7rem;
+}
+
+footer div {
+    color: var(--color-light);
+}

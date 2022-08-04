@@ -1,0 +1,45 @@
+nav {
+    background: rgba(0,0,0,.3);
+    top: 3%;
+    width: max-content;
+    /* display: block; */
+    padding: .7rem 1rem;
+    position: fixed;
+    z-index: 2;
+    right: -5%;
+    transform: translateX(-50%);
+    /* display: flex; */
+    gap: .8rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(15px);
+}
+
+nav:hover {
+    right: -3%;
+}
+
+
+nav a {
+    background: transparent;
+    padding: .9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    background: rgba(0,0,0,.3);
+}
+
+nav a.active {
+    background-color: var(--color-bg);
+    color: var(--color-white);
+}
+
+/* ========================== MEDIA QUERIES: PHONES =========================== */
+@media screen and (max-width: 600px) {
+    nav {
+        display: none;
+    }
+}

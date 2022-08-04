@@ -1,0 +1,112 @@
+.experience__container {
+    display: grid;
+    grid-template-columns: .5fr 3.5fr;
+    gap: 2rem;
+    /* padding: 3rem; */
+    /* width: 70.8rem; */
+    /* margin-left: 11.85rem; */
+    /* height: 20rem; */
+    /* border-radius: 2rem; */
+}
+
+.experience__container > div {
+    padding: 2.4rem 3rem;
+    background-color: var(--color-bg-variant);
+    border-radius: 2rem;
+    border: 1px solid transparent;
+}
+
+.tab__panel-list {
+    min-width: auto;
+    width: auto;
+}
+
+.tab__list {
+    min-width: auto;
+    width: auto;
+}
+
+.tab__list-horizontal {
+    display: none;
+}
+
+.jobs__details-icon {
+    margin-left: 1rem;
+    color: var(--color-primary);
+}
+
+.jobs__title {
+    margin-left: 1rem;
+    font-size: 20px;
+    color: var(--color-primary);
+}
+
+.jobs__time {
+    margin-left: 1rem;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: -.5rem;
+    color: var(--color-light);
+} 
+
+.jobs__list {
+    /* transition: right 1s linear; */
+    display: grid; 
+    grid-template-columns: .01fr 1fr;
+    font-weight: 400;
+}
+
+.jobs__list li {
+    min-width: 100%;
+    width: 100%;
+    margin-left: 1rem; 
+    font-size: 15px;
+}
+
+/* ========================== MEDIA QUERIES: TABLETS =========================== */
+@media screen and (max-width: 1024px) {
+    .experience__container {
+        grid-template-columns: 1fr;
+        width: 80%;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+
+    .experience__container > div {
+        width: 80%;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+
+    .tab__list {
+        display: none;
+
+    }
+
+    .tab__list-horizontal {
+        display: contents;
+        position: center;
+        margin-left: 3rem;
+    }
+}
+
+/* ========================== MEDIA QUERIES: PHONES =========================== */
+@media screen and (max-width: 600px) {
+    .experience__container {
+        gap: 1rem;
+    }
+
+    .experience__container > div {
+        width: 120%;
+        padding: 1rem 1rem;
+        margin-left: -2rem;
+    }
+
+    .tab__list {
+        display: none;
+    }
+
+    .tab__list-horizontal {
+        display: contents;
+    }
+}

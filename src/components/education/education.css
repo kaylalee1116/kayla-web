@@ -1,0 +1,65 @@
+.education__container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2rem;
+}
+
+.education__container > div {
+    background: var(--color-bg-variant);
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+}
+
+.education__container > div h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+
+.education__school > .education__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+
+.education__details {
+    display: flex;
+    gap: 1;
+    
+}
+
+.education__details-icon {
+    margin-top: 6px;
+    color: var(--color-primary);
+    margin-right: 6px;
+}
+
+/* ========================== MEDIA QUERIES: TABLETS =========================== */
+@media screen and (max-width: 1024px) {
+    .education__container {
+        grid-template-columns: 1fr;
+    }
+
+    .education__container > div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+    .education__content {
+        padding: 1rem;
+    }
+}
+
+/* ========================== MEDIA QUERIES: PHONES =========================== */
+@media screen and (max-width: 600px) {
+    .education__container {
+        gap: 1rem;
+    }
+
+    .education__container > div {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+}
